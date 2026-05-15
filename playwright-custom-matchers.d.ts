@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 // Type definitions for custom Playwright matchers
 // This file ensures TypeScript recognizes our custom matchers globally
 
@@ -5,8 +6,7 @@
 
 declare global {
   namespace PlaywrightTest {
-    // eslint-disable-next-line @typescript-eslint/no-unused-vars
-    interface Matchers<R, _T = unknown> {
+    interface Matchers<R, T = unknown> {
       /**
        * Check if a campaign with the given title is visible on the page
        * @param title - Campaign title to search for
