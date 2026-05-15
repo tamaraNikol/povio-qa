@@ -111,42 +111,42 @@ npm run lint:fix      # Auto-fix where possible
 
 ```
 povio-qa/
-├── tests/                          # Test specifications
-│   ├── health-check.spec.ts        # App health and availability checks
-│   ├── authentication.spec.ts      # Login flow tests
-│   ├── registration.spec.ts        # User registration happy path
-│   ├── registration-validation.spec.ts  # Registration form validation
-│   ├── campaigns.spec.ts           # Campaign CRUD operations
-│   ├── campaigns-validation.spec.ts   # Campaign form validation
-│   └── custom-matchers.example.spec.ts  # Custom matcher usage examples
-├── utils/                          # Utilities and helpers
-│   ├── api-helpers.ts              # User generation & API cleanup
-│   ├── constants.ts                # Centralized constants and config
-│   ├── selectors.ts                # Centralized CSS selectors
-│   ├── matchers/                   # Custom Playwright matchers
+├── tests/                                    # Test specifications
+│   ├── health-check.spec.ts                  # App health and availability checks
+│   ├── authentication.spec.ts                # Login flow tests
+│   ├── registration.spec.ts                  # User registration happy path
+│   ├── registration-validation.spec.ts       # Registration form validation
+│   ├── campaigns.spec.ts                     # Campaign CRUD operations
+│   ├── campaigns-validation.spec.ts          # Campaign form validation
+│   └── custom-matchers.example.spec.ts       # Custom matcher usage examples
+├── utils/                                    # Utilities and helpers
+│   ├── api-helpers.ts                        # User generation & API cleanup
+│   ├── constants.ts                          # Centralized constants and config
+│   ├── selectors.ts                          # Centralized CSS selectors
+│   ├── matchers/                             # Custom Playwright matchers
 │   │   ├── custom-matchers.ts
 │   │   ├── custom-matchers.d.ts
 │   │   └── README.md
-│   └── pages/                      # Page Object Models
-│       ├── base.page.ts            # Shared base class
-│       ├── register.page.ts        # Registration page
-│       ├── login.page.ts           # Login page
-│       └── campaigns.page.ts       # Campaigns page
-├── fixtures/                       # Test fixtures
-│   ├── test-fixtures.ts            # Custom Playwright fixtures
-│   └── test-helpers.ts             # Test helper functions
-├── reports/                        # Generated reports (gitignored)
-│   ├── html/                       # HTML report
-│   ├── results.json                # JSON results
-│   └── test-results/               # Screenshots, videos, traces
+│   └── pages/                                # Page Object Models
+│       ├── base.page.ts                      # Shared base class
+│       ├── register.page.ts                  # Registration page
+│       ├── login.page.ts                     # Login page
+│       └── campaigns.page.ts                 # Campaigns page
+├── fixtures/                                 # Test fixtures
+│   ├── test-fixtures.ts                      # Custom Playwright fixtures
+│   └── test-helpers.ts                       # Test helper functions
+├── reports/                                  # Generated reports (gitignored)
+│   ├── html/                                 # HTML report
+│   ├── results.json                          # JSON results
+│   └── test-results/                         # Screenshots, videos, traces
 ├── .github/workflows/
-│   └── playwright.yml              # GitHub Actions CI pipeline
-├── playwright.config.ts            # Playwright configuration
-├── playwright-custom-matchers.d.ts # TypeScript definitions
-├── tsconfig.json                   # TypeScript configuration
-├── .eslintrc.json                  # ESLint configuration
-├── TEST_PLAN.md                    # Test plan for upcoming features
-└── README.md                       # This file
+│   └── playwright.yml                        # GitHub Actions CI pipeline
+├── playwright.config.ts                      # Playwright configuration
+├── playwright-custom-matchers.d.ts           # TypeScript definitions
+├── tsconfig.json                             # TypeScript configuration
+├── .eslintrc.json                            # ESLint configuration
+├── TEST_PLAN.md                              # Test plan for upcoming features
+└── README.md                                 # This file
 ```
 
 ---
