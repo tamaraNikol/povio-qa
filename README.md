@@ -75,13 +75,13 @@ npx playwright test tests/health-check.spec.ts
 
 ```bash
 # Run smoke tests only
-npx playwright test --grep @smoke
+npx playwright test --grep "@smoke"
 
 # Run critical tests
-npx playwright test --grep @critical
+npx playwright test --grep "@critical"
 
 # Exclude slow tests
-npx playwright test --grep-invert @slow
+npx playwright test --grep-invert "@slow"
 ```
 
 ### Run tests in debug mode (step through)
@@ -256,9 +256,9 @@ Custom fixtures (`fixtures/test-fixtures.ts`) provide pre-configured:
 
 Tests are tagged for flexible execution:
 ```bash
-npx playwright test --grep @smoke     # Quick health checks
-npx playwright test --grep @critical  # Must-pass scenarios
-npx playwright test --grep @validation # All validation tests
+npx playwright test --grep "@smoke"       # Quick health checks
+npx playwright test --grep "@critical"    # Must-pass scenarios
+npx playwright test --grep "@validation"  # All validation tests
 ```
 
 ---
