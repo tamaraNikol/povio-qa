@@ -156,12 +156,14 @@ povio-qa/
 | Suite | Tests | Description |
 |---|---|---|
 | **Health Check** | 1 test | Verifies app responds with 200, navigation and key elements render |
-| **Authentication** | 2 tests | Valid login, invalid credentials handling |
+| **Authentication** | 11 tests | Login, logout, session management, access control, boundary tests |
 | **Registration** | 2 tests | Valid user registration, duplicate email rejection |
-| **Registration Validation** | 4 tests | Form validation (empty fields, invalid email, password mismatch, short password) |
+| **Registration Validation** | 6 tests | Form validation (empty fields, invalid email, password requirements, browser validation) |
 | **Campaigns** | 2 tests | Create campaign, edit campaign |
-| **Campaigns Validation** | 3 tests | Form validation (empty name, empty description, invalid URL) |
-| **Custom Matchers** | Examples | Demonstrates custom assertion usage |
+| **Campaigns Validation** | 7 tests | Form validation, edge cases, special characters, data preservation |
+| **Custom Matchers** | 3 tests | Demonstrates custom assertion usage examples |
+
+**Total: 32 tests** across 7 test suites
 
 ### Test Organization
 
