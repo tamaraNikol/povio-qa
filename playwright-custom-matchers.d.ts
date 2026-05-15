@@ -5,7 +5,8 @@
 
 declare global {
   namespace PlaywrightTest {
-    interface Matchers<R, T = unknown> {
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
+    interface Matchers<R, _T = unknown> {
       /**
        * Check if a campaign with the given title is visible on the page
        * @param title - Campaign title to search for
