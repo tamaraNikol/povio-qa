@@ -3,7 +3,6 @@
 **Project:** Povio Automation Testing Application  
 **Document Version:** 1.1  
 **Date:** May 2026  
-**Author:** Tamara Nikolesku 
 **Status:** Ready for Review
 
 ---
@@ -296,8 +295,7 @@ Campaigns can optionally include an image. The campaign list shows a thumbnail i
 
 | Version | Date | Author | Changes |
 |---|---|---|---|
-| 1.0 | 2025 | QA Engineer | Initial draft |
-| 1.1 | May 2026 | QA Engineer | Updated with quick reference, test summary, and open questions |
+| 1.1 | May 2026 | QA Engineer | Comprehensive test plan with quick reference, test summary, and open questions |
 
 ---
 
