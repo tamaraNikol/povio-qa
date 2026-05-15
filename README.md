@@ -139,14 +139,19 @@ povio-qa/
 │   ├── html/                                 # HTML report
 │   ├── results.json                          # JSON results
 │   └── test-results/                         # Screenshots, videos, traces
-├── .github/workflows/
-│   └── playwright.yml                        # GitHub Actions CI pipeline
-├── playwright.config.ts                      # Playwright configuration
-├── playwright-custom-matchers.d.ts           # TypeScript definitions
-├── tsconfig.json                             # TypeScript configuration
+├── .github/                                  # GitHub configuration
+│   └── workflows/
+│       └── playwright.yml                    # GitHub Actions CI pipeline
 ├── .eslintrc.json                            # ESLint configuration
-├── TEST_PLAN.md                              # Test plan for upcoming features
-└── README.md                                 # This file
+├── .gitignore                                # Git ignore rules
+├── global-setup.ts                           # Playwright global setup
+├── package.json                              # NPM dependencies and scripts
+├── package-lock.json                         # NPM dependency lock file
+├── playwright-custom-matchers.d.ts           # TypeScript definitions
+├── playwright.config.ts                      # Playwright configuration
+├── tsconfig.json                             # TypeScript configuration
+├── README.md                                 # This file
+└── TEST_PLAN.md                              # Test plan for upcoming features
 ```
 
 ---
@@ -227,14 +232,14 @@ All failure artifacts are automatically linked in the HTML report for easy acces
 The project includes custom Playwright matchers for more expressive assertions:
 
 ```typescript
-// Check if an element is visible and has specific text
-await expect(element).toBeVisibleWithText('Expected Text');
+// Check if a campaign is visible on the page
+await expect(page).toHaveCampaignVisible('My Campaign Title');
 
-// Verify a form field has a validation error
-await expect(input).toHaveValidationError('Email is required');
+// Verify a success/flash message appears
+await expect(page).toShowSuccessMessage(/created|success/i);
 
-// Check campaign list contains a specific campaign
-await expect(page).toContainCampaign('My Campaign');
+// Check if any flash message is visible
+await expect(page).toShowFlashMessage();
 ```
 
 See `utils/matchers/README.md` for complete documentation.
@@ -315,20 +320,6 @@ Use clear, descriptive commit messages:
 
 ---
 
-## CI/CD Pipeline
-
-Tests run automatically on every push and pull request via GitHub Actions.
-
-**Pipeline steps:**
-1. Set up Node.js environment
-2. Install dependencies
-3. Install Playwright browsers
-4. Run ESLint checks
-5. Execute all tests
-6. Upload HTML report as artifact (retained 14 days)
-7. Upload failure screenshots (retained 7 days)
-
----
 
 ## License & Copyright
 
