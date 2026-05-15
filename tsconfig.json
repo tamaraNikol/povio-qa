@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",
+    "module": "commonjs",
+    "lib": ["ES2020"],
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "baseUrl": ".",
+    "paths": {
+      "@utils/*": ["utils/*"],
+      "@fixtures/*": ["fixtures/*"]
+    },
+    "types": ["@playwright/test", "node"]
+  },
+  "include": [
+    "**/*.ts",
+    "**/*.d.ts",
+    "playwright-custom-matchers.d.ts"
+  ],
+  "exclude": ["node_modules"]
+}

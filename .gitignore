@@ -1,0 +1,54 @@
+# Dependencies
+node_modules/
+
+# Test outputs and reports
+reports/
+playwright-report/
+test-results/
+
+# Environment files
+.env
+*.local
+
+# Operating system files
+.DS_Store
+Thumbs.db
+
+# Build outputs
+dist/
+build/
+
+# IDE and editor files
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# Playwright specific
+.playwright-mcp/
+
+# Private learning notes and internal documentation
+# These files contain internal analysis and should not be shared externally
+LEARNINGS.md
+CODE_REVIEW_ANALYSIS.md
+IMPROVEMENTS_PLAN.md
+SUMMARY.md
+REFACTORING_COMPLETED.md
+REFACTORING_SESSION_SUMMARY.md
+QUICK_START.md
+PROJECT_COMPLETION_SUMMARY.md
+PROJECT_COMPLETE.md
+CONSTANTS_EXTRACTION_COMPLETE.md
+SELECTOR_EXTRACTION_COMPLETE.md
+SELECTOR_EXTRACTION_FINAL_SUMMARY.md
+CUSTOM_ASSERTIONS_COMPLETE.md
+ENHANCED_REPORTING_COMPLETE.md
+REMAINING_IMPROVEMENTS.md
+TYPESCRIPT_FIX_SUMMARY.md
+TEST_TAGS_GUIDE.md
+DOCUMENTATION_UPDATE_SUMMARY.md
+SUBMISSION_CHECKLIST.md
+SCREENSHOT_FEATURE_DEMO.md
+SCREENSHOT_CONFIRMATION.md
+SCREENSHOT_FEATURE_SUMMARY.txt
